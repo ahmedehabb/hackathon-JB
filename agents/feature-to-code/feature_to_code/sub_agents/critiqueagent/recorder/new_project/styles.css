@@ -1,0 +1,88 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.calculator {
+  width: 320px;
+  height: 550px;
+  background-color: #333; /* Darker background color */
+  /* border-radius: 20px; Removed border radius */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+}
+
+.display {
+  background-color: #222; /* Lighter display background */
+  color: #eee; /* Lighter display text color */
+  text-align: right;
+  padding: 25px 20px; /* Adjusted padding */
+  font-size: 55px; /* Increased display font size */
+  font-family: Menlo, Monaco, monospace; /* Updated font */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 12px; /* Increased button spacing */
+  padding: 12px;
+}
+
+.button {
+  background-color: #777; /* Lighter gray buttons */
+  color: white;
+  border: none;
+  padding: 22px; /* Increased button padding */
+  font-size: 26px; /* Increased button font size */
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+  border-radius: 30px; /* Increased border radius */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+}
+
+.button:hover {
+  background-color: #777;
+}
+
+.button:active {
+  background-color: #777;
+}
+
+.button.operator {
+  background-color: #ffbb66; /* Lighter orange buttons */
+  color: #fff;
+}
+
+.button.operator:hover {
+  background-color: #fbb16e;
+}
+
+.button.clear {
+  background-color: #a5a5a5;
+  color: black;
+}
+
+.button.clear:hover {
+  background-color: #c7c7c7;
+}
+
+.button.zero {
+  grid-column: span 2;
+}
+
+.display .expression {
+    font-size: 25px;
+    color: #888;
+    height: 30px;
+    text-align: right;
+}
